@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/logo-1.png';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-200 shadow">
+    <div className="bg-gray-900 shadow">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className="text-sky-600 font-bold text-xl">DSA-Algo</div>
-
+            <Link to="/" className="flex items-center">
+              <img src={Logo} alt="DSA-Algorithm" className="h-16 w-auto object-contain" />
+            </Link>
           <div className="hidden sm:flex sm:items-center">
-            <Link to="/" className="text-gray-800 text-sm font-semibold hover:text-sky-600 mr-4">Home</Link>
-            <Link to="/sorting" className="text-gray-800 text-sm font-semibold hover:text-sky-600 mr-4">DSA Algorithm</Link>
+            <Link to="/Algorithm" className="text-sky-100 text-lg font-bold hover:text-sky-400 mr-4">Algorithm</Link>
+            <Link to="/sorting" className="text-sky-100 text-lg font-bold hover:text-sky-400 mr-4">Visualization</Link>
           </div>
 
           <div className="sm:hidden cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
@@ -27,8 +29,8 @@ function Nav() {
         {menuOpen && (
           <div className="block sm:hidden bg-white border-t-2 py-2">
             <div className="flex flex-col">
-              <Link to="/" className="text-gray-800 text-sm font-semibold hover:text-sky-600 mb-1">Home</Link>
-              <Link to="/sorting" className="text-gray-800 text-sm font-semibold hover:text-sky-600 mb-1">DSA algorithm</Link>
+              <Link to="/Algorithm" className="text-gray-800 text-sm font-semibold hover:text-sky-600 mb-1">Algorithm</Link>
+              <Link to="/sorting" className="text-gray-800 text-sm font-semibold hover:text-sky-600 mb-1">Visualization</Link>
             </div>
           </div>
         )}

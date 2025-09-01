@@ -1,12 +1,48 @@
-# React + Vite
+# 🔢 dsa-algo-Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web app to **visualize classic sorting algorithms** step by step.  
+Built with **React (Vite) + TailwindCSS**.  
 
-Currently, two official plugins are available:
+🎥 Watch how arrays are sorted in real-time with animations, comparisons, and highlights.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Demo Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](public/Screen1.png)
+
+*(Replace with your actual screenshot file — add it to `public/` and push to GitHub)*
+
+---
+
+## ✨ Features
+
+- 📊 Visualizes multiple sorting algorithms:
+  - Bubble Sort
+  - Insertion Sort
+  - Merge Sort
+  - Selection Sort
+  - Quick Sort
+- 🎲 Generate random arrays or input your own numbers
+- ⏯ Play / Pause animations
+- ⚡ Adjustable animation speed
+- 🔎 Highlights comparisons and swaps
+- ✅ Displays numbers directly under bars
+
+---
+
+## 🛠 Tech Stack
+
+- **React (Vite)** – frontend framework  
+- **TailwindCSS** – styling  
+- **JavaScript (ES6)** – algorithms & logic  
+
+---
+
+## 📦 Installation
+
+Clone the project and install dependencies:
+
+```bash
+cd dsa-algo-Visualizer
+npm install

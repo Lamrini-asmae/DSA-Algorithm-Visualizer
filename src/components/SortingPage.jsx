@@ -76,9 +76,10 @@ export default function App() {
     return () => clearTimeout(timer);
   }, [playing, stepIndex, steps, speed]);
 
-  return (
-    <div className="min-h-screen flex flex-col items-center p-6 bg-sky-50">
-      <h1 className="text-3xl font-bold mb-6">Sorting Visualizer</h1>
+return (
+  <div className="bg-sky-50 min-h-screen">
+    <div className="max-w-4xl mx-auto p-6 w-full flex flex-col items-center">
+      <h1 className="text-3xl font-bold mb-6 text-sky-900">Sorting Visualizer</h1>
 
       {/* Input Controls */}
       <div className="flex flex-col md:flex-row gap-4 mb-6">
@@ -93,7 +94,7 @@ export default function App() {
           />
           <button
             onClick={handleCustomList}
-            className="px-3 py-2 bg-purple-500 text-white rounded"
+            className="px-3 py-2 bg-sky-600 text-white rounded hover:cursor-pointer"
           >
             Set List
           </button>
@@ -111,7 +112,7 @@ export default function App() {
           />
           <button
             onClick={() => generateArray(inputLength)}
-            className="px-3 py-2 bg-green-600 text-white rounded"
+            className="px-3 py-2 bg-sky-600 text-white rounded hover:cursor-pointer"
           >
             Random List
           </button>
@@ -134,7 +135,7 @@ export default function App() {
 
         <button
           onClick={generateSteps}
-          className="px-3 py-2 bg-green-500 text-white rounded"
+          className="px-3 py-2 bg-sky-600 text-white rounded hover:cursor-pointer"
         >
           Generate Steps
         </button>
@@ -142,8 +143,8 @@ export default function App() {
         <button
           onClick={() => setPlaying(!playing)}
           disabled={steps.length === 0}
-          className={`px-3 py-2 rounded text-white ${
-            playing ? "bg-red-500" : "bg-blue-500"
+          className={`hover:cursor-pointer px-3 py-2 rounded text-white ${
+            playing ? "bg-red-500" : "bg-sky-400"
           }`}
         >
           {playing ? "Pause" : "Play"}
@@ -169,12 +170,15 @@ export default function App() {
         array={steps[stepIndex]?.array || array}
         highlighted={steps[stepIndex]?.highlighted || []}
         finished={finished}
-     />
-     {finished && (
-      <div className="mt-4 text-lg font-semibold text-green-600">
-        Sorting Finished!
-      </div>
-    )}
+      />
+
+      {finished && (
+        <div className="mt-4 text-lg font-semibold text-green-600">
+          Sorting Finished!
+        </div>
+      )}
     </div>
-  );
+  </div>
+);
+
 }
