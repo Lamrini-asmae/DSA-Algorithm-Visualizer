@@ -17,6 +17,7 @@ function App() {
           <Route path="/sorting" element={<SortingPage />} />
         </Routes>
       </main>
+      {/* <SortingPage /> */}
     </div>
   );
 }
