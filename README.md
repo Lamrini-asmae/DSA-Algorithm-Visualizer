@@ -11,8 +11,6 @@ Built with **React (Vite) + TailwindCSS**.
 
 ![App Screenshot](public/Screen1.png)
 
-*(Replace with your actual screenshot file — add it to `public/` and push to GitHub)*
-
 ---
 
 ## ✨ Features
@@ -23,11 +21,11 @@ Built with **React (Vite) + TailwindCSS**.
   - Merge Sort
   - Selection Sort
   - Quick Sort
-- 🎲 Generate random arrays or input your own numbers
-- ⏯ Play / Pause animations
-- ⚡ Adjustable animation speed
-- 🔎 Highlights comparisons and swaps
-- ✅ Displays numbers directly under bars
+- Generate random arrays or input your own numbers
+- Play / Pause animations
+- Adjustable animation speed
+- Highlights comparisons and swaps
+- Displays numbers directly under bars
 
 ---
 
